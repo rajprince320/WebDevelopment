@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 2</title>
+		<script>
+			let prince = {
+				firstName: "Prince",
+				lastName: "raj",
+				marks: {
+					Hindi: 91,
+					English: 92,
+					Maths: 85,
+					Science: 88,
+					Social: 82,
+				},
+			};
+			/* Create object methods
+			     - Method1: To calculate average marks
+			     - Method2: If the passing marks is 60, display whether the student has passed or failed (in each subject) in a
+			     - For eg: Hindi - 91 - Pass
+			     */
+			function calculateAverageMark(let marks) {
+				let sum;
+				for (let x in marks) {
+					sum += marks[x];
+				}
+				console.log(sum);
+			}
+			calculateAverageMark(prince.marks);
+		</script>
+	</head>
+	<body></body>
+</html>

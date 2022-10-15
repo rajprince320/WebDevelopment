@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 1</title>
+	</head>
+	<body>
+		<script>
+			/*
+
+			     Represent the following data of a student using javaScript object:
+			     - firstName
+			     - lastName
+			     - batchNo
+			     - course
+			     - hobbies
+			     - likes iceCream
+			     */
+			/*
+
+			    My name is Prince raj, I'm in batch 16 pursuing Front-end and Web Development course. I like ice cream, My hobbies are dancing, singing and listening to music.
+			    */
+			let princeDetails = {
+				firstName: "Prince",
+				lastName: "raj",
+				batchNo: 16,
+				course: "MERN",
+				hobbies: ["Playing Guitar", "Playing Piano", "Solving Puzzles"],
+				likesIceCream: false,
+			};
+
+			let princeInfo =
+				"My name is " +
+				princeDetails.firstName +
+				" " +
+				princeDetails.lastName +
+				", I'm in batch: " +
+				princeDetails.batchNo +
+				" pursuing " +
+				princeDetails.course +
+				", My hobbies are " +
+				princeDetails.hobbies +
+				", and i " +
+				(princeDetails.likesIceCream ? "likes" : "don't like") +
+				" Ice Cream!";
+			console.log(princeInfo);
+		</script>
+	</body>
+</html>

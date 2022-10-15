@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Object Methods</title>
+		<script>
+			// Function
+			// function abc() {
+			// 	console.log("abc");
+			// }
+
+			// Anonymous function
+			// let abc = function () {
+			// 	console.log("abc");
+			// };
+
+			let mohan = {
+				firstName: "Mohan",
+				lastName: "Kumar",
+				batchNo: 12,
+				sayHi: function () {
+					console.log("Hi");
+				},
+				fullName: function () {
+					return this.firstName + " " + this.lastName;
+				},
+				displayIntroduction: function () {
+					return (
+						"My name is " +
+						this.fullName() +
+						", I'm in batch " +
+						this.batchNo +
+						"."
+					);
+				},
+			};
+			console.log(mohan.displayIntroduction());
+		</script>
+	</head>
+	<body></body>
+</html>
