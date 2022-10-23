@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 3</title>
+		<script>
+			let x =
+				"HTML, CSS and JavaScript are awesome! I have created a website using HTML, CSS and JavaScript, HTML< CSS and JavaScript are the core concepts of Front-End Development.";
+
+			// Search Second occurrence of 'HTML, CSS and JavaScript'
+
+			let searchPhase = "HTML, CSS and JavaScript";
+			console.log(x.indexOf(searchPhase));
+			console.log(x.lastIndexOf(searchPhase));
+
+			let lengthOfSubstring = searchPhase.length;
+			let newString = x.slice(lengthOfSubstring);
+
+			console.log(newString.indexOf(searchPhase));
+		</script>
+	</head>
+	<body></body>
+</html>

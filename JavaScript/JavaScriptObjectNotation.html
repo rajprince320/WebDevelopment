@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JSON</title>
+		<!-- <script>
+			// JSON - JavaScript Object Notation
+
+			         // Format used by APIs to transfer data
+			         let abhishekDetails ={
+			             firstName: 'Abhishek',
+			             lastName: 'Kumar'
+			         }
+
+			// XML - Extensible markup language
+			// <abhishekDetails>
+			// 	<firstName>Abhishek</firstName>
+			// 	<lastName>Kumar</lastName>
+			// </abhishekDetails>
+		</script> -->
+	</head>
+	<body>
+		<h1 id="test"></h1>
+		<script>
+			let abhishekDetails = {
+				firstName: "Abhishek",
+				lastname: "Kumar",
+			};
+
+			// document.getElementById("test").innerText = abhishekDetails.firstName;
+
+			// JSON Methods
+			// 1. JSON.stringify - converts Object to Strings
+			// document.getElementById("test").innerText =
+			// 	JSON.stringify(abhishekDetails);
+
+			// 2. JSON.parse - converts String to Object who follows structure
+			let details = JSON.stringify(abhishekDetails);
+			console.log(JSON.parse(details));
+		</script>
+	</body>
+</html>
