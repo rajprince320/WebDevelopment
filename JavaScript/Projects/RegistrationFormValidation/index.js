@@ -6,6 +6,7 @@ function validate() {
 	let state = document.getElementById("state").value;
 	let zip = document.getElementById("zip").value;
 	let TnC = document.getElementById("t-and-c").checked;
+	let error = false;
 
 	if (firstName.length >= 2) {
 		document.getElementById("first-name-invalid").style.display = "none";
@@ -13,6 +14,7 @@ function validate() {
 	} else {
 		document.getElementById("first-name-valid").style.display = "none";
 		document.getElementById("first-name-invalid").style.display = "block";
+		error = true;
 	}
 
 	if (lastName.length >= 2) {
@@ -21,6 +23,7 @@ function validate() {
 	} else {
 		document.getElementById("last-name-valid").style.display = "none";
 		document.getElementById("last-name-invalid").style.display = "block";
+		error = true;
 	}
 
 	/*
@@ -47,6 +50,7 @@ function validate() {
 	} else {
 		document.getElementById("email-valid").style.display = "none";
 		document.getElementById("email-invalid").style.display = "block";
+		error = true;
 	}
 
 	if (city.length >= 3) {
@@ -55,6 +59,7 @@ function validate() {
 	} else {
 		document.getElementById("city-valid").style.display = "none";
 		document.getElementById("city-invalid").style.display = "block";
+		error = true;
 	}
 
 	/*
@@ -75,6 +80,7 @@ function validate() {
 	} else {
 		document.getElementById("zip-valid").style.display = "none";
 		document.getElementById("zip-invalid").style.display = "block";
+		error = true;
 	}
 
 	/**
@@ -87,6 +93,7 @@ function validate() {
 	} else {
 		document.getElementById("state-valid").style.display = "none";
 		document.getElementById("state-invalid").style.display = "block";
+		error = true;
 	}
 	/*
 	t and c
@@ -95,5 +102,41 @@ function validate() {
 		document.getElementById("tnc-invalid").style.display = "none";
 	} else {
 		document.getElementById("tnc-invalid").style.display = "block";
+		error = true;
+	}
+
+	/**
+	 * Submit
+	 *
+	 */
+	if (!error) {
+		// document.getElementById("first-name").value = "";
+		// document.getElementById("last-name").value = "";
+		// document.getElementById("email").value = "";
+		// document.getElementById("city").value = "";
+		// document.getElementById("state").value = "";
+		// document.getElementById("zip").value = "";
+		// document.getElementById("t-and-c").checked = false;
+
+		// or
+
+		document.getElementById("registration-form").reset();
+
+		let validFeedBack = document.getElementsByClassName("valid-feedback");
+		for (let i = 0; i < validFeedBack.length; i++) {
+			validFeedBack[i].style.display = "none";
+		}
+
+		let invalidFeedBack = document.getElementsByClassName("invalid-feedback");
+		for (let i = 0; i < invalidFeedBack.length; i++) {
+			invalidFeedBack[i].style.display = "none";
+		}
+		alert("Your data saved successfully!");
 	}
 }
+/*
+if no errors
+- reset the form
+- Alert: Your details have been saved successfully
+
+*/
