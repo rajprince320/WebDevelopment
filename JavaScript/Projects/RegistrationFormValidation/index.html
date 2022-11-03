@@ -25,6 +25,7 @@
 					id="first-name"
 					required
 					autocomplete="off"
+					onkeyup="validate()"
 				/>
 				<div class="valid-feedback" id="first-name-valid">Looks good!</div>
 				<div class="invalid-feedback" id="first-name-invalid">
@@ -40,6 +41,7 @@
 					id="last-name"
 					required
 					autocomplete="off"
+					onkeyup="validate()"
 				/>
 				<div class="valid-feedback" id="last-name-valid">Looks good!</div>
 				<div class="invalid-feedback" id="last-name-invalid">
@@ -57,6 +59,7 @@
 						aria-describedby="inputGroupPrepend"
 						required
 						autocomplete="off"
+						onkeyup="validate()"
 					/>
 					<div class="valid-feedback" id="email-valid">Looks good!</div>
 					<div class="invalid-feedback" id="email-invalid">
@@ -72,6 +75,7 @@
 					id="city"
 					required
 					autocomplete="off"
+					onkeyup="validate()"
 				/>
 				<div class="valid-feedback" id="city-valid">Looks good!</div>
 				<div class="invalid-feedback" id="city-invalid">
@@ -80,7 +84,7 @@
 			</div>
 			<div class="col-md-3">
 				<label for="state" class="form-label">State</label>
-				<select class="form-select" id="state" required>
+				<select class="form-select" id="state" required onchange="validate()">
 					<option selected value="None">Choose...</option>
 					<option value="Andhra Pradesh">Andhra Pradesh</option>
 					<option value="Andaman and Nicobar Islands">
@@ -134,6 +138,7 @@
 					id="zip"
 					required
 					autocomplete="off"
+					onkeyup="validate()"
 				/>
 				<div class="valid-feedback" id="zip-valid">Looks good!</div>
 				<div class="invalid-feedback" id="zip-invalid">
@@ -149,6 +154,7 @@
 						id="t-and-c"
 						required
 						autocomplete="off"
+						onchange="validate()"
 					/>
 					<label class="form-check-label" for="t-and-c">
 						Agree to terms and conditions
@@ -159,7 +165,7 @@
 				</div>
 			</div>
 			<div class="col-12" style="text-align: center">
-				<button class="btn btn-dark" type="button" onclick="validate()">
+				<button class="btn btn-dark" type="button" onclick="validate(true)">
 					Submit form
 				</button>
 			</div>
