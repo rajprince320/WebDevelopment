@@ -1,9 +1,18 @@
 .App {
 	text-align: center;
-	margin-left: 20%;
-	margin-right: 20%;
-	background-color: #eaeaea;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 10px;
+	background-color: white;
+	border: 1px;
+	padding: 10px 30px;
+	border-radius: 20px;
+	/* box-shadow: 1px 5px 20px 1px black; */
+	border: 1px dashed #8c8b8b;
 }
 .main {
 	display: flex;
+}
+hr {
+	border-top: 1px dashed #8c8b8b;
 }

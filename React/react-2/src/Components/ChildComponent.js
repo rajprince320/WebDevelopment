@@ -8,7 +8,7 @@ class ChildComponent extends Component {
 				<GrandChildComponent msg="React" bgColor="red" />
 				<GrandChildComponent msg="JavaScript" bgColor="green" />
 				<GrandChildComponent msg="Java" bgColor="grey" />
-				<GrandChildComponent msg="Html" bgColor="Yellow" />
+				<GrandChildComponent msg="Html" bgColor="gold" />
 				<GrandChildComponent msg="BootStrap" bgColor="silver" />
 			</>
 		);

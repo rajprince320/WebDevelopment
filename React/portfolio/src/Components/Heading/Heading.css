@@ -1,21 +1,22 @@
 .Heading {
 	background-color: #b2b2b2;
 	height: auto;
-	border-bottom-left-radius: 1em;
-	border-bottom-right-radius: 1em;
+	border-radius: 1em;
 	padding: 0px 0px 20px;
+	/* box-shadow: 1px 0px 5px 0px black; */
+	border: 1px dashed #8c8b8b;
 }
 .name {
 	padding: 10px;
 	font-size: 30px;
 	font-weight: bold;
-	color: #00abb3;
+	color: white;
+	text-shadow: 1px 1px 4px #8c8b8b;
 }
-.email {
-	font-size: 20px;
-	color: #3c4048;
-}
+.email,
 .phone {
-	font-size: 18px;
-	color: #3c4048;
+	font-size: 15px;
+	color: white;
+	text-shadow: 1px 1px 4px #8c8b8b;
+	margin: 0 0 5px;
 }

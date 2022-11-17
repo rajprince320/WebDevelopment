@@ -6,7 +6,9 @@ class GrandChildComponent extends Component {
 	}
 	render() {
 		const { msg, bgColor } = this.props;
-		return <p style={{ backgroundColor: bgColor }}>I Love {msg}!</p>;
+		return (
+			<p style={{ backgroundColor: bgColor, color: "white" }}>I Love {msg}!</p>
+		);
 	}
 }
 export default GrandChildComponent;

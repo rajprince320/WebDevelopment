@@ -7,6 +7,7 @@ function App() {
 	return (
 		<div className="App">
 			<Heading />
+			<hr />
 			<div className="main">
 				<LeftSection />
 				<RightSection />
