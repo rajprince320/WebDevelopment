@@ -7,18 +7,26 @@ class Count extends Component {
 			count: 0,
 		};
 		this.increment = this.increment.bind(this);
+		this.increment5 = this.increment5.bind(this);
 		this.decrement = this.decrement.bind(this);
 		this.reset = this.reset.bind(this);
 	}
 	increment() {
-		this.setState({
-			count: this.state.count + 1,
-		});
+		this.setState((prevState) => ({
+			count: prevState.count + 1,
+		}));
 	}
 	decrement() {
 		this.setState({
 			count: this.state.count - 1,
 		});
+	}
+	increment5() {
+		this.increment();
+		this.increment();
+		this.increment();
+		this.increment();
+		this.increment();
 	}
 	reset() {
 		this.setState({
@@ -45,6 +53,9 @@ class Count extends Component {
 				</button>
 				<button style={style.buttonStyle} onClick={this.decrement}>
 					Decrement
+				</button>
+				<button style={style.buttonStyle} onClick={this.increment5}>
+					Increment 5
 				</button>
 				<button style={style.buttonStyle} onClick={this.reset}>
 					Reset

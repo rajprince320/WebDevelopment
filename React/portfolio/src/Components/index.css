@@ -2,16 +2,26 @@
 .left {
 	flex: 1;
 	text-align: left;
+	padding: 0 20px;
+}
+.left {
+	border-right: 1px dashed #ccc;
 }
 
 .section-title {
 	font-size: 1.2em;
-	margin: 0;
 }
 .section-sub-title {
 	font-size: 1em;
-	margin: 8px;
 }
 .section-sub-title span {
 	font-size: 0.6em;
+	margin: 0;
+}
+.education {
+	padding: 0 40px 0 0;
+}
+.section-description {
+	font-size: 0.6em;
+	margin: 0;
 }
